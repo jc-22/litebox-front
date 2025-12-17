@@ -1,0 +1,332 @@
+/* ========================================
+   NEW POST MODAL - Tech Blog
+   ======================================== */
+
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  padding: 0 16px;
+}
+
+/* Modal Container */
+.modal-container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  background: #D8F34E;
+  border: 3px solid #000000;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 0px #000000;
+}
+
+/* Header */
+.modal-header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  height: 68px;
+  margin-bottom: 40px;
+}
+
+.modal-close-icon {
+  width: 48px;
+  height: 48px;
+}
+
+/* Content Container */
+.modal-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Title Section */
+.modal-title-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.modal-title-wrapper {
+  width: 100%;
+  max-width: 480px;
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.modal-title-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-title {
+  width: 100%;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 35px;
+  line-height: 120%;
+  font-weight: 500;
+  text-align: center;
+  color: #240F35;
+  margin: 0;
+}
+
+.modal-description {
+  width: 100%;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 18px;
+  line-height: 180%;
+  font-weight: 400;
+  text-align: center;
+  color: #595959;
+  margin: 0;
+}
+
+/* Form */
+.modal-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Input Row */
+.modal-input-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-input-wrapper {
+  width: 400px;
+  height: 56px;
+}
+
+/* Upload Section */
+.modal-upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.modal-file-input {
+  display: none;
+}
+
+/* Progress Section */
+.modal-progress-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.modal-progress-wrapper {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.modal-progress-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal-progress-content-error {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.modal-progress-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000000;
+  margin: 0;
+}
+
+/* Progress Bar */
+.modal-progress-bar-container {
+  width: 100%;
+  height: 20px;
+  position: relative;
+}
+
+.modal-progress-bar-bg {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: #8C8C8C;
+  border-radius: 9999px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-progress-bar-bg-error {
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  background: red;
+  border-radius: 9999px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.modal-progress-bar-fill {
+  position: absolute;
+  height: 10px;
+  border-radius: 9999px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: width 0.2s ease;
+}
+
+.modal-progress-bar-fill--loading {
+  background: #000000;
+}
+
+.modal-progress-bar-fill--error {
+  background: #FF0000;
+}
+
+.modal-progress-bar-fill--success {
+  background: #00FF00;
+}
+
+/* Error Message */
+.modal-error-message {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: black;
+  margin: 0;
+}
+
+/* Success Section */
+.modal-success-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.modal-success-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #000000;
+}
+
+.modal-success-icon {
+  width: 20px;
+  height: 20px;
+  color: #00FF00;
+}
+
+/* ========================================
+   RESPONSIVE - MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .modal-overlay {
+    padding: 0 24px;
+  }
+
+  .modal-container {
+    padding: 24px;
+    max-width: 100%;
+  }
+
+  .modal-title-wrapper {
+    padding: 0 16px;
+  }
+
+  .modal-title {
+    font-size: 28px;
+  }
+
+  .modal-description {
+    font-size: 16px;
+  }
+
+  .modal-input-wrapper,
+  .modal-progress-wrapper {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .modal-header {
+    margin-bottom: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-container {
+    padding: 16px;
+  }
+
+  .modal-title-wrapper {
+    padding: 0 16px;
+  }
+
+  .modal-title {
+    font-size: 24px;
+  }
+
+  .modal-description {
+    font-size: 14px;
+    width: 250px;
+  }
+
+  .modal-content {
+    gap: 24px;
+  }
+
+  .modal-form,
+  .modal-progress-section,
+  .modal-success-section {
+    gap: 24px;
+    width: 250px;
+  }
+}

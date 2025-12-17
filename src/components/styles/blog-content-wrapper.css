@@ -1,0 +1,38 @@
+/* ========================================
+   BLOG CONTENT WRAPPER
+   Layout container for BlogList + MostViewed
+   ======================================== */
+
+.blog-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 24px;
+  gap: 30px;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+
+@media (max-width: 1380px) {
+  .blog-content-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-content-wrapper {
+    padding: 0 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-content-wrapper {
+    padding: 0 24px;
+  }
+}

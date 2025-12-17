@@ -1,0 +1,160 @@
+/* ========================================
+   MOST VIEWED - Tech Blog
+   ======================================== */
+
+.most-viewed-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 40px;
+  width: 304px;
+  height: auto;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.most-viewed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 24px;
+  width: 304px;
+  height: auto;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* ========================================
+   TITLE
+   ======================================== */
+
+.most-viewed-title {
+  width: auto;
+  height: 23px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0;
+}
+
+/* ========================================
+   POSTS LIST
+   ======================================== */
+
+.most-viewed-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 13px;
+  width: 304px;
+  height: auto;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* ========================================
+   INDIVIDUAL ITEM
+   ======================================== */
+
+.most-viewed-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0;
+  width: 304px;
+  height: 80px;
+  flex: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.most-viewed-item:hover {
+  opacity: 0.8;
+}
+
+.most-viewed-item-title {
+  margin: 0;
+  width: 216px;
+  height: auto;
+  max-height: 80px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #8C8C8C;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+/* ========================================
+   IMAGE
+   ======================================== */
+
+.most-viewed-item-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 80px;
+  height: 80px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.most-viewed-item-icon {
+  display: none;
+  width: 48px;
+  height: 48px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* ========================================
+   DIVIDER LINE
+   ======================================== */
+
+.most-viewed-divider {
+  width: 304px;
+  height: 0;
+  border: 1px solid #595959;
+  flex: none;
+  flex-grow: 0;
+  margin-top: 13px;
+}
+
+/* ========================================
+   RESPONSIVE - HIDE ON MOBILE
+   ======================================== */
+
+@media (max-width: 1370px) {
+  .most-viewed-section {
+    display: none;
+  }
+}

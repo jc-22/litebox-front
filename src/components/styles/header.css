@@ -1,0 +1,141 @@
+/* ========================================
+   HEADER - Tech Blog
+   ======================================== */
+
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 81px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  z-index: 50;
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1360px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 24px;
+  gap: 10px;
+}
+
+/* Logo */
+.header-logo {
+  width: 178.27px;
+  height: 28px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  transition: opacity 0.2s ease;
+}
+
+.header-logo:hover {
+  opacity: 0.8;
+}
+
+/* New post button */
+.header-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 2px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  transition: opacity 0.2s ease;
+}
+
+.header-button:hover {
+  opacity: 0.8;
+}
+
+/* Button text */
+.header-button-text {
+  font-family: 'Space Grotesk', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* Button icon */
+.header-button-icon {
+  width: 24px;
+  height: 24px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+/* Spacing for fixed header */
+.header-spacer {
+  height: 81px;
+}
+
+/* ========================================
+   RESPONSIVE - MOBILE
+   ======================================== */
+
+@media (max-width: 768px) {
+  .header-container {
+    height: 72px;
+  }
+
+  .header-content {
+    padding: 20px 24px;
+    margin: 0 auto;
+  }
+
+  .header-logo {
+    width: 140px;
+    height: 22px;
+  }
+
+  .header-button-text {
+    font-size: 14px;
+  }
+
+  .header-button-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .header-spacer {
+    height: 72px;
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .header-content {
+    padding: 24px;
+    gap: 8px;
+  }
+
+  .header-logo {
+    width: 120px;
+    height: 19px;
+  }
+
+  .header-button-text {
+    font-size: 13px;
+  }
+}
